@@ -17,7 +17,7 @@ This repository contains a collection of GPU computing kernels developed as part
 ## Acknowledgement
 
 - **main.cu:** contains setup and sequential code.
-- **kernel.cu:** implementation. 
+- **kernel.cu:** parallel implementation. 
 - **common.h:** for shared declarations across main.cu and kernel.cu .
 - **timer.h:** to assist with timing.
 - **Makefile:** used for compilation.
@@ -37,7 +37,7 @@ This repository contains a collection of GPU computing kernels developed as part
   ./vecmax
   ```
   - For testing on different input sizes, you can provide your own value for the number of 
-  vector elements: ./vecmax <\M> (example: ./vecmax 1000000)
+  vector elements: ./vecmax <.M> (example: ./vecmax 1000000)
 
 
 - **To run 2:**
@@ -46,7 +46,7 @@ This repository contains a collection of GPU computing kernels developed as part
   ./mm
   ```
   - For testing on different matrix sizes, you can provide your own values for matrix 
-  dimensions as follows: ./mm <\M> <\N> <\K> (example: ./mm 256 512 128)
+  dimensions as follows: ./mm <.M> <.N> <.K> (example: ./mm 256 512 128)
 
 
 - **To run 3:**
@@ -55,7 +55,7 @@ This repository contains a collection of GPU computing kernels developed as part
   ./mm-tiled
   ```
   For testing on different matrix sizes, you can provide your own values for matrix 
-  dimensions as follows: ./mm-tiled <\M> <\N> <\K> 
+  dimensions as follows: ./mm-tiled <.M> <.N> <.K> 
 
 
 - **To run 4:**
@@ -64,7 +64,7 @@ This repository contains a collection of GPU computing kernels developed as part
   ./convolution
   ```
   For testing on different input sizes, you can provide your own values for the input 
-  dimensions as follows: ./convolution <\height> <\width>
+  dimensions as follows: ./convolution <.height> <.width>
 
 
 - **To run 5:**
@@ -73,7 +73,7 @@ This repository contains a collection of GPU computing kernels developed as part
   ./histogram
   ```
   For testing on different input sizes, you can provide your own values for the input 
-  dimensions as follows: ./histogram <\height> <\width>
+  dimensions as follows: ./histogram <.height> <.width>
 
 
 - **To run 6:**
@@ -82,7 +82,7 @@ This repository contains a collection of GPU computing kernels developed as part
   ./reduction
   ```
   For testing on different input sizes, you can provide your own values for input size as 
-  follows: ./reduction <\N>
+  follows: ./reduction <.N>
 
 
 - **To run 7:**
@@ -91,4 +91,4 @@ This repository contains a collection of GPU computing kernels developed as part
   ./scan
   ```
   For testing on different input sizes, you can provide your own values for input size as 
-  follows: ./scan <\N>
+  follows: ./scan <.N>
